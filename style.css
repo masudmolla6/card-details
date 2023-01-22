@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main-sec{
+    background-image: linear-gradient(rgba(0,0,0,red), rgba(0,0,0,blue));
+    display: grid;
+    justify-items: center;
+}
+.container{
+    width: 80%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: space-around;
+    margin: 20px;
+}
+.card{
+    background-color: rgb(204, 118, 118);
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+.card p{
+    text-align: center;
+}
+.card h3{
+    text-align: center;
+}.card h1{
+    text-align: center;
+}
+@media screen and (max-width: 576px){
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
